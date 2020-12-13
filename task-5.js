@@ -1,33 +1,30 @@
-let userInput = prompt("Enter country name: ").toLowerCase();
+let userInput = prompt('Enter country name: ').toLowerCase();
 
 let deliveryPrice;
 
-
 switch (userInput) {
-  
-  case "china":
+  case 'china':
     deliveryPrice = 200;
     break;
 
-  case "chile":
+  case 'chile':
     deliveryPrice = 250;
     break;
-    
-  case "australia":
+
+  case 'australia':
     deliveryPrice = 170;
     break;
-    
-  case "india":
+
+  case 'india':
     deliveryPrice = 80;
     break;
-    
-  case "jamaica":
+
+  case 'jamaica':
     deliveryPrice = 120;
     break;
 
   default:
-    "Invalid country name";
+    'Invalid country name';
 }
 
 console.log(deliveryPrice);
-
