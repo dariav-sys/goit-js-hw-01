@@ -10,7 +10,6 @@ if (userInput === null) {
   message = 'Пустая строка, попытайтесь еще раз';
 } else {
   message = 'Доступ запрещен, неверный пароль!';
-} 
-
+}
 
 alert(message);

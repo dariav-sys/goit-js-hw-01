@@ -7,16 +7,16 @@ let droidNum = parseFloat(userInput);
 
 if (userInput === null) {
   console.log('Отменено пользователем!');
-} else if (Number.isInteger(droidNum)) {  
+} else if (Number.isInteger(droidNum)) {
   totalPrice = userInput * pricePerDroid;
-    if (credits < totalPrice) {
-      console.log('Недостаточно средств на счету!');
-    } else {
-      credits -= totalPrice;
-      console.log(
-        `Вы купили ${droidNum} дроидов, на счету осталось ${credits} кредитов.`,
-      );
-    }
+  if (credits < totalPrice) {
+    console.log('Недостаточно средств на счету!');
+  } else {
+    credits -= totalPrice;
+    console.log(
+      `Вы купили ${droidNum} дроидов, на счету осталось ${credits} кредитов.`,
+    );
+  }
 } else {
-   console.log('Неверный ввод!')
+  console.log('Неверный ввод!');
 }
