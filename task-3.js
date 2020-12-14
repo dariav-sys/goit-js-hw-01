@@ -1,16 +1,16 @@
 const userInput = prompt('Пожалуйста, введите пароль: ');
 const ADMIN_PASSWORD = 'jqueryismyjam';
+let message;
 
-while (true) {
-  if (userInput === null) {
-    console.log('Отменено пользователем!');
-    break;
-  }
+if (userInput === null) {
+  message = 'Отменено пользователем!';
+} else if (userInput === ADMIN_PASSWORD) {
+  message = 'Добро пожаловать!';
+} else if (!userInput) {
+  message = 'Пустая строка, попытайтесь еще раз';
+} else {
+  message = 'Доступ запрещен, неверный пароль!';
+} 
 
-  if (userInput === ADMIN_PASSWORD) {
-    console.log('Добро пожаловать!');
-    break;
-  }
-  console.log('Доступ запрещен, неверный пароль!');
-  break;
-}
+
+alert(message);
