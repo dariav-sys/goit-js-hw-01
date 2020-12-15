@@ -22,3 +22,5 @@ if (userInput === null) {
 } else {
   console.log('Неверный ввод!');
 }
+
+

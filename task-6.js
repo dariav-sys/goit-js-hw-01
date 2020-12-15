@@ -14,3 +14,5 @@ while (true) {
 }
 
 console.log('Total sum is ', total);
+
+
